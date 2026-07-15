@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile SFML executable",
+            "type": "cppbuild",
+            "command": "g++",
+            "args": [
+                "-o",
+                "${workspaceFolder}/main.exe",
+                "-I\\Users\\gageh\\Documents\\Bored Coding\\Libs\\SFML-2.6.1\\include",
+                "-L\\Users\\gageh\\Documents\\Bored Coding\\Libs\\SFML-2.6.1\\lib",
+                "${workspaceFolder}/*.cpp",
+                "-lsfml-graphics",
+                "-lsfml-window",
+                "-lsfml-system"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

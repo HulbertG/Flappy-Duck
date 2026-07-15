@@ -1,0 +1,3 @@
+C:\Users\gageh\Documents\mingw64\bin\cmake.exe -E rm -f CMakeFiles\FlappyDuck.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\FlappyDuck.dir/objects.a @CMakeFiles\FlappyDuck.dir\objects1.rsp
+C:\msys64\ucrt64\bin\g++.exe  "-LC:\\Users\\gageh\\Documents\\Bored Coding\\Libs\\SFML1\\lib" "-DSFML_STATIC" -g -Wl,--whole-archive CMakeFiles\FlappyDuck.dir/objects.a -Wl,--no-whole-archive -o FlappyDuck.exe -Wl,--out-implib,libFlappyDuck.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\FlappyDuck.dir\linkLibs.rsp

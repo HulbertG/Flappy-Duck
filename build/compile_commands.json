@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Users/gageh/Documents/Bored Coding/FlappyDuck/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/FlappyDuck.dir/includes_CXX.rsp  \"-LC:\\\\Users\\\\gageh\\\\Documents\\\\Bored Coding\\\\Libs\\\\SFML1\\\\lib\" \"-DSFML_STATIC\" -g -o CMakeFiles\\FlappyDuck.dir\\Game.cpp.obj -c \"C:\\Users\\gageh\\Documents\\Bored Coding\\FlappyDuck\\Game.cpp\"",
+  "file": "C:/Users/gageh/Documents/Bored Coding/FlappyDuck/Game.cpp",
+  "output": "CMakeFiles/FlappyDuck.dir/Game.cpp.obj"
+}
+]
