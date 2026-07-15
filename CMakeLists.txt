@@ -1,0 +1,21 @@
+cmake_minimum_required(VERSION 3.0.0)
+project(FlappyDuck VERSION 0.1.0 LANGUAGES C CXX)
+
+include(CTest)
+enable_testing()
+
+file(GLOB src_files "*.h" "*.cpp")
+set(SFML_STATIC_LIBRARIES TRUE)
+set(CMAKE_PREFIX_PATH "C:\\Users\\gageh\\Documents\\Bored Coding\\Libs\\SFML1")
+#set(CMAKE_SOURCE_DIR "C:\\Users\\gageh\\Documents\\Bored Coding\\Libs\\SFML1")
+find_package(SFML COMPONENTS Graphics Window System REQUIRED)
+#target_link_directories(FlappyDuck PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/SFML/lib)
+include_directories("C:\\Users\\gageh\\Documents\\Bored Coding\\Libs\\SFML1\\include")
+set(CMAKE_CXX_F)
+add_executable(FlappyDuck ${src_files})
+#set(SFML_ROOT "C:\\Users\\gageh\\Documents\\Bored Coding\\Libs\\SFML1")
+target_link_libraries(FlappyDuck sfml-graphics-s sfml-window-s sfml-system-s winmm opengl32 gdi32)
+
+set(CPACK_PROJECT_NAME ${PROJECT_NAME})
+set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
+include(CPack)
